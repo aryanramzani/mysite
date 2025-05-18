@@ -4,7 +4,7 @@ from django.http import HttpResponse
 from django.http import JsonResponse
 
 def index_view(request) :
-    return render (request , "index.html")
+    return render (request , template_name="myapp/index.html")
 
 def about_view(request) :
     return HttpResponse('<h1> About Page<h1>')
